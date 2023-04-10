@@ -95,7 +95,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #b1cfeb;
+    background-color: #bdebb1b2;
     border: 1px solid #999999;
     width: 1300px;
     border-radius: 10px;
@@ -131,7 +131,7 @@ h2 {
 .specials {
     margin: 40px auto;
     padding: 20px;
-    background-color: #b1cfeb;
+    background-color: #b1cfebc0;
     border: 1px solid #dddddd;
     max-width: 1300px;
     border-radius: 10px;
@@ -173,7 +173,7 @@ h2 {
 .hours {
     margin: 40px auto;
     padding: 20px;
-    background-color: #b1cfeb;
+    background-color: #ebe2b1c0;
     border: 1px solid #999999;
     border-radius: 10px;
     max-width: 1300px;
@@ -279,11 +279,11 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
-.items li {
+.item {
     display: block;
     width: 30%;
     margin: 1%;
@@ -292,33 +292,38 @@ footer p {
     border: 1px solid #999999;
     padding: 10px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-    background-color: #a7d0d1;
+    background-color: #ecc29a;
     transition: box-shadow 0.3s ease;
     border-radius: 10px;
 }
 
-.items li:hover {
+.item:hover {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-    background-color: #50a4af;
-    color: #0c0909;
+    background-color: #803b0d;
+    color: #f8f5f5;
 }
 
-.items li img {
+.item:hover img {
+    transition: src 0.3s ease;
+}
+
+.item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    transition: src 0.3s ease;
 }
 
-.items li p {
+.item p {
     margin: 5px 0;
 }
 
-.items li p.name {
+.item p.name {
     font-weight: bold;
     color: #333;
 }
 
-.items li p.price {
+.item p.price {
     color: #666;
 }
 
@@ -326,6 +331,7 @@ footer p {
 .item:hover .price {
     color: #fff;
 }
+
 
 .parent {
     position: fixed;
@@ -362,7 +368,7 @@ footer p {
 }
 
 .livestream-container {
-    background-color: #cbd88f;
+    background-color: #a28fd8b4;
     display: flex;
     flex-direction: column;
     justify-content: center;

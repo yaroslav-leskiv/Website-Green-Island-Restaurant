@@ -62,3 +62,24 @@ window.onscroll = function () {
     nav.classList.remove('fixed');
   }
 }
+// --------------------------------------------------------------------------------
+const menuItems = document.querySelectorAll('#menu .items li');
+
+menuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const picture = item.querySelector('img');
+    const newImgSrc = picture.dataset.image;
+    picture.setAttribute('data-previous-image', picture.src); 
+    picture.src = newImgSrc;
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const picture = item.querySelector('img');
+    const previousImgSrc = picture.dataset.previousImage; 
+    if (previousImgSrc) { 
+      picture.src = previousImgSrc;
+      picture.removeAttribute('data-previous-image'); 
+    }
+  });
+});
+// --------------------------------------------------------------------------------
