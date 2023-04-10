@@ -1,2 +1,2 @@
-# v2.0
-![green_island_restaurant_website](https://user-images.githubusercontent.com/61146340/230817518-0ab4ab78-298c-4430-9a1d-693007c23f89.png)
+# v2.1
+![green_island_restaurant_website](https://user-images.githubusercontent.com/61146340/230944508-cde33b3e-d49d-4372-a1f6-b4a6dad94be3.png)
